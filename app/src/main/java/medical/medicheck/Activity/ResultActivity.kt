@@ -12,6 +12,7 @@ import medical.medicheck.Models.NavItem
 import medical.medicheck.R
 import medical.medicheck.ResultDialog
 import org.jetbrains.anko.find
+import org.jetbrains.anko.startActivity
 
 class ResultActivity : AppCompatActivity() {
 
@@ -69,10 +70,18 @@ class ResultActivity : AppCompatActivity() {
             }
             intent.putExtra("ask", ask_)
             val dialog = ResultDialog(this, ask_, term, sick, start)
+            dialog.fin = object : ResultDialog.Finish {
+                override fun finish() {
+                    finishAffinity()
+                    startActivity<MainActivity>()
+                }
+
+            }
             dialog.show()
         }
 
         result_ask1_img.isSelected = true
+
     }
 
     fun getAsk(pos: Int) {

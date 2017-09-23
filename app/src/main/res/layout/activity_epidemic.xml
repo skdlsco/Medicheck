@@ -53,7 +53,7 @@
             app:layout_constraintRight_toRightOf="@id/gl_center"
             app:layout_constraintTop_toBottomOf="@id/epidemic_toolBar"
             app:letterSpacing="3"
-            tools:text="중동 호흡기 증후군" />
+            android:text="중동 호흡기 증후군" />
 
         <medical.medicheck.View.LetterSpacingTextView
             android:id="@+id/ill_name_eng"
@@ -68,7 +68,7 @@
             app:layout_constraintRight_toRightOf="@id/gl_center"
             app:layout_constraintTop_toBottomOf="@id/ill_name_ko"
             app:letterSpacing="3"
-            tools:text="Middle East Respiratory Syndrome, MERS" />
+            android:text="Middle East Respiratory Syndrome, MERS" />
 
         <medical.medicheck.View.LetterSpacingTextView
             android:id="@+id/epidemic_cause_box"
@@ -106,7 +106,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ill_name_eng"
             app:letterSpacing="2"
-            tools:text="메스르-코로나 바이러스에 의한\n감염에 의해 발생됨" />
+            android:text="메스르-코로나 바이러스에 의한\n감염에 의해 발생됨" />
 
         <medical.medicheck.View.LetterSpacingTextView
             android:id="@+id/epidemic_symptom_box"

@@ -33,6 +33,11 @@ class ResultDialog(context: Context, val ask: String, val term: String, val sick
             v.backgroundColor = Color.TRANSPARENT
             toast.show()
             dismiss()
+            fin?.finish()
         }
+    }
+    var fin: Finish? = null
+    interface Finish {
+        fun finish()
     }
 }
