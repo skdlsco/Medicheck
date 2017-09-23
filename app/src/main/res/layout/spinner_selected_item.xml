@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRed"
+    android:orientation="vertical">
+
+    <medical.medicheck.View.LetterSpacingTextView
+        android:id="@+id/s_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@color/colorRed"
+        android:fontFamily="@font/nanum_square_extra_bold"
+        android:gravity="center"
+        android:paddingBottom="1dp"
+        android:paddingEnd="3dp"
+        android:paddingTop="1dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:letterSpacing="3"
+        tools:text="30세" />
+</LinearLayout>
