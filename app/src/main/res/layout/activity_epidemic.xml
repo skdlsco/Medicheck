@@ -53,7 +53,7 @@
             app:layout_constraintRight_toRightOf="@id/gl_center"
             app:layout_constraintTop_toBottomOf="@id/epidemic_toolBar"
             app:letterSpacing="3"
-            tools:text="중독증ㅎ군" />
+            tools:text="중동 호흡기 증후군" />
 
         <medical.medicheck.View.LetterSpacingTextView
             android:id="@+id/ill_name_eng"
@@ -63,12 +63,12 @@
             android:fontFamily="@font/nanum_square_regular"
             android:gravity="center"
             android:textColor="@color/colorRed"
-            android:textSize="16sp"
+            android:textSize="15sp"
             app:layout_constraintLeft_toLeftOf="@id/gl_center"
             app:layout_constraintRight_toRightOf="@id/gl_center"
             app:layout_constraintTop_toBottomOf="@id/ill_name_ko"
             app:letterSpacing="3"
-            tools:text="중독증ㅎ군" />
+            tools:text="Middle East Respiratory Syndrome, MERS" />
 
         <medical.medicheck.View.LetterSpacingTextView
             android:id="@+id/epidemic_cause_box"
@@ -94,21 +94,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="44dp"
-            android:layout_marginRight="40dp"
             android:layout_marginTop="80dp"
             android:fontFamily="@font/nanum_square_regular"
             android:paddingBottom="5dp"
             android:paddingEnd="17dp"
-            android:paddingStart="17dp"
             android:paddingTop="5dp"
             android:textColor="#222222"
-            android:textSize="16sp"
+            android:textSize="15sp"
             app:layout_constraintHorizontal_weight="1"
             app:layout_constraintLeft_toRightOf="@id/epidemic_cause_box"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ill_name_eng"
             app:letterSpacing="2"
-            tools:text="asdfsdfsddsfdsfasfadsfsaf" />
+            tools:text="메스르-코로나 바이러스에 의한\n감염에 의해 발생됨" />
 
         <medical.medicheck.View.LetterSpacingTextView
             android:id="@+id/epidemic_symptom_box"
@@ -134,16 +132,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="44dp"
-            android:layout_marginRight="40dp"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/nanum_square_regular"
             android:paddingBottom="5dp"
             android:paddingEnd="17dp"
-            android:paddingStart="17dp"
             android:paddingTop="5dp"
-            android:text="asdfasdfsadfasdfsadfsadfasdfsadfsadf"
+            android:text="호흡곤란과 같은 급성 호흡기 질환\n고열과 기침 동반\n일부에선 설사와 구토와 같은\n소화기 질환 문제를 겪을 수 있음.\n폐렴 혹은 급성 심부전"
             android:textColor="#222222"
-            android:textSize="16sp"
+            android:textSize="15sp"
             app:layout_constraintHorizontal_weight="1"
             app:layout_constraintLeft_toRightOf="@id/epidemic_symptom_box"
             app:layout_constraintRight_toRightOf="parent"
@@ -174,14 +170,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="44dp"
-            android:layout_marginRight="40dp"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/nanum_square_regular"
             android:paddingBottom="5dp"
             android:paddingEnd="17dp"
-            android:paddingStart="17dp"
             android:paddingTop="5dp"
-            android:text="adsfasdfasdfasdfasdfsdf"
+            android:text="증상을 완화 시키는 약물을 투여\n하며 경과를 지켜보며 인체 내\n항체에 의해 자연 치료"
             android:textColor="#222222"
             android:textSize="16sp"
             app:layout_constraintHorizontal_weight="1"

@@ -1,5 +1,6 @@
 package medical.medicheck.Activity
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
@@ -45,7 +46,7 @@ class DiagnosisActivity : AppCompatActivity() {
 
         val topPopupWindow = topPopup.get(diagnosis_spinner_top) as android.widget.ListPopupWindow
 
-        topPopupWindow.height = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50f, resources.displayMetrics).toInt()
+        topPopupWindow.height = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 70f, resources.displayMetrics).toInt()
 
 
         val spinnerBottomItem = arrayOf(arrayOf("두통", "기타"), arrayOf("각막", "간지러움", "다래끼", "기타"),
@@ -69,7 +70,7 @@ class DiagnosisActivity : AppCompatActivity() {
         bottomPopup.isAccessible = true
 
         val bottomPopupWindow = bottomPopup.get(diagnosis_spinner_bottom) as android.widget.ListPopupWindow
-        bottomPopupWindow.height = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50f, resources.displayMetrics).toInt()
+        bottomPopupWindow.height = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 70f, resources.displayMetrics).toInt()
 
 
         diagnosis_spinner_top.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
@@ -83,7 +84,9 @@ class DiagnosisActivity : AppCompatActivity() {
         }
 
         diagnosis_btn_next.setOnClickListener {
-            startActivity<DiagnosisSecondActivity>()
+            val intent = Intent(this, DiagnosisSecondActivity::class.java)
+            intent.putExtra("sick", "" + diagnosis_spinner_top.selectedItem + ", " + diagnosis_spinner_bottom.selectedItem)
+            startActivity(intent)
         }
     }
 }

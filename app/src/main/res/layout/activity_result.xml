@@ -60,17 +60,123 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:orientation="vertical">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/circle" />
+
+                    <medical.medicheck.View.LetterSpacingTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="26dp"
+                        android:fontFamily="@font/nanum_square_regular"
+                        android:text="아픈 부위 : "
+                        android:textColor="#222222"
+                        app:letterSpacing="2" />
+
+                    <medical.medicheck.View.LetterSpacingTextView
+                        android:id="@+id/result_sick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nanum_square_regular"
+                        android:text="눈, 각막"
+                        android:textColor="#222222"
+                        app:letterSpacing="2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/circle" />
+
+                    <medical.medicheck.View.LetterSpacingTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="26dp"
+                        android:fontFamily="@font/nanum_square_regular"
+                        android:text="통증 시작 시기 : "
+                        android:textColor="#222222"
+                        app:letterSpacing="2" />
+
+                    <medical.medicheck.View.LetterSpacingTextView
+                        android:id="@+id/result_sickStart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nanum_square_regular"
+                        android:text="1일 ~ 1주일 전"
+                        android:textColor="#222222"
+                        app:letterSpacing="2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/circle" />
+
+                    <medical.medicheck.View.LetterSpacingTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="26dp"
+                        android:fontFamily="@font/nanum_square_regular"
+                        android:text="통증 주기 : "
+                        android:textColor="#222222"
+                        app:letterSpacing="2" />
+
+                    <medical.medicheck.View.LetterSpacingTextView
+                        android:id="@+id/result_sickTerm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nanum_square_regular"
+                        android:text="특정 상황"
+                        android:textColor="#222222"
+                        app:letterSpacing="2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/circle" />
+
+                    <medical.medicheck.View.LetterSpacingTextView
+                        android:id="@+id/result_hospital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="26dp"
+                        android:fontFamily="@font/nanum_square_regular"
+                        android:text="김안과, 서울 특별시 숙대입구역"
+                        android:textColor="#222222"
+                        app:letterSpacing="2" />
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="37dp">
+                android:layout_marginTop="45dp">
 
                 <medical.medicheck.View.LetterSpacingTextView
                     android:layout_width="match_parent"
@@ -99,9 +205,9 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="40dp"
                     android:fontFamily="@font/nanum_square_regular"
-                    android:text="1분 이내"
+                    android:text="예, 같은 병원에 같은 증상으로 방문했습니다."
                     android:textColor="#222222"
-                    android:textSize="16sp"
+                    android:textSize="15sp"
                     app:letterSpacing="3" />
             </LinearLayout>
 
@@ -122,9 +228,9 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="40dp"
                     android:fontFamily="@font/nanum_square_regular"
-                    android:text="1분 ~ 30분"
+                    android:text="예, 다른 병원에 같은 증상으로 방문했습니다."
                     android:textColor="#222222"
-                    android:textSize="16sp"
+                    android:textSize="15sp"
                     app:letterSpacing="3" />
             </LinearLayout>
 
@@ -145,9 +251,9 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="40dp"
                     android:fontFamily="@font/nanum_square_regular"
-                    android:text="30 분 ~"
+                    android:text="아니오, 같은 병원에 다른 증상으로 방문했습니다."
                     android:textColor="#222222"
-                    android:textSize="16sp"
+                    android:textSize="15sp"
                     app:letterSpacing="3" />
             </LinearLayout>
 
@@ -168,9 +274,9 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="40dp"
                     android:fontFamily="@font/nanum_square_regular"
-                    android:text="특정 상황"
+                    android:text="아니오, 이 병원에 방문한 적이 없습니다."
                     android:textColor="#222222"
-                    android:textSize="16sp"
+                    android:textSize="15sp"
                     app:letterSpacing="3" />
             </LinearLayout>
         </LinearLayout>
