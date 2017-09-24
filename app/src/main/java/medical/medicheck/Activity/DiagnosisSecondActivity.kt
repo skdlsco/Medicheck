@@ -78,7 +78,7 @@ class DiagnosisSecondActivity : AppCompatActivity() {
             getTerm(4)
         }
         diagnosisSecond_btn_next.setOnClickListener {
-            val intent = Intent(this, ResultActivity::class.java)
+            val intent = Intent(this, DiagnosisFindHospitalActivity::class.java)
             intent.putExtra("sick", getIntent().getStringExtra("sick"))
             val start = when (startSelected) {
                 0 -> "오늘"

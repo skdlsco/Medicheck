@@ -16,10 +16,10 @@
     <medical.medicheck.View.LetterSpacingTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/cabin_bold_ttf"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/cabin_bold"
         android:gravity="center"
         android:text="Medicheck"
-        android:layout_marginTop="10dp"
         android:textColor="@color/colorRed"
         android:textSize="46sp" />
 </LinearLayout>

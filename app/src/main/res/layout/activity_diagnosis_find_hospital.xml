@@ -11,13 +11,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        z<android.support.v7.widget.Toolbar
-            android:id="@+id/main_toolBar"
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/diagnosisFindHospital_toolBar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize">
 
             <ImageView
-                android:id="@+id/main_drawer_btn"
+                android:id="@+id/diagnosisFindHospital_drawer_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="16dp"
@@ -28,67 +28,32 @@
                 android:layout_height="match_parent"
                 android:fontFamily="@font/cabin_bold"
                 android:gravity="center_vertical"
-                android:text="MediCheck"
+                android:text="진단"
                 android:textColor="@color/colorRed"
                 android:textSize="21sp" />
         </android.support.v7.widget.Toolbar>
 
-        <View
+        <fragment
+            android:id="@+id/main_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-        <ImageView
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:layout_gravity="center"
-            android:src="@drawable/pic_main_logo" />
-
-        <View
+        <medical.medicheck.View.LetterSpacingTextView
+            android:id="@+id/diagnosisFindHospital_btn_next"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="21dp"
-            android:layout_marginStart="21dp"
-            android:orientation="vertical"
-            android:padding="@dimen/activity_horizontal_margin">
-
-            <medical.medicheck.View.LetterSpacingTextView
-                android:id="@+id/main_btn_diagnosis"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/radius_solid_red"
-                android:fontFamily="@font/nanum_square_bold"
-                android:gravity="center"
-                android:padding="16dp"
-                android:text="진단 시작"
-                android:textColor="@color/colorWhite"
-                android:textSize="17sp" />
-
-            <medical.medicheck.View.LetterSpacingTextView
-                android:id="@+id/main_btn_epidemic"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/radius_stroke_red"
-                android:fontFamily="@font/nanum_square_bold"
-                android:gravity="center"
-                android:padding="16dp"
-                android:text="유행병 증상"
-                android:textColor="@color/colorRed"
-                android:textSize="17sp" />
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+            android:layout_height="52dp"
+            android:layout_marginBottom="38dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/radius_solid_red"
+            android:gravity="center"
+            android:text="다음"
+            android:textColor="@color/colorWhite"
+            app:letterSpacing="3" />
     </LinearLayout>
-
 
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
@@ -117,5 +82,4 @@
                 android:textSize="18sp" />
         </LinearLayout>
     </android.support.design.widget.NavigationView>
-
 </android.support.v4.widget.DrawerLayout>

@@ -26,7 +26,7 @@
             <medical.medicheck.View.LetterSpacingTextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:fontFamily="@font/cabin_bold_ttf"
+                android:fontFamily="@font/cabin_bold"
                 android:gravity="center_vertical"
                 android:text="유행병"
                 android:textColor="@color/colorRed"

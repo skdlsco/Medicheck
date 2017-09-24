@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="medical.medicheck">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,7 +25,13 @@
         <activity android:name=".Activity.EpidemicActivity" />
         <activity android:name=".Activity.DiagnosisActivity" />
         <activity android:name=".Activity.DiagnosisSecondActivity" />
-        <activity android:name=".Activity.ResultActivity"></activity>
+        <activity android:name=".Activity.ResultActivity" />
+        <activity android:name=".Activity.DiagnosisFindHospitalActivity" />
+
+        <service android:name=".GpsInfo" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDddlcNu0PsBilbIJHZ4mZZiNxSRRO1QOo" />
     </application>
 
 </manifest>
